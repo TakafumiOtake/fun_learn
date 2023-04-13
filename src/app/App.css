@@ -48,15 +48,9 @@ body {
 }
 
 .button {
-  user-select: none;
   cursor: pointer;
   background-color: lightgrey;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
+  border-width: 0;
 }
 
 .mode-list {
@@ -80,9 +74,12 @@ body {
 }
 
 .back {
-  font-size: 2em;
   margin: 0 20px;
   padding: 0 5px;
+}
+
+.back .button {
+  font-size: 1.5em;
 }
 
 .timer {
