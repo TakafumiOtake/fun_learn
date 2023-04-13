@@ -1,0 +1,158 @@
+body {
+  font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", fantasy;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.content {
+  display: flex;
+  flex-flow: column;
+  margin-top: 10px;
+}
+
+.button {
+  user-select: none;
+  cursor: pointer;
+  background-color: lightgrey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.mode-list {
+  display: flex;
+  flex-flow: column;
+  align-content: center;
+  justify-content: center;
+  margin: 5% 0;
+}
+
+.mode-button {
+  height: 100px;
+  margin: 10px 5%;
+  font-size: 3em;
+}
+
+.header {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+.back {
+  font-size: 2em;
+  margin: 0 20px;
+  padding: 0 5px;
+}
+
+.timer {
+  align-self: end;
+  margin: 0 20px;
+  font-size: 2em;
+}
+
+.gauge {
+  height: 25px;
+  width: 90%;
+  margin: 20px 5%;
+  display: flex;
+  flex-flow: row;
+}
+
+.gauge-bar {
+  transition: flex-grow 0.5s;
+}
+
+.gauge-done {
+  background-color: cornflowerblue;
+}
+
+.gauge-remain {
+  background-color: grey;
+}
+
+.question {
+  align-self: center;
+  font-size: 9em;
+  color: navy;
+}
+
+.question.miss {
+  color: crimson;
+}
+
+.answer-buttons {
+  display: flex;
+  flex-flow: column;
+}
+
+.answer-button-row {
+  display: flex;
+  flex-flow: row;
+}
+
+.answer-button {
+  flex-basis: 100%;
+  flex-grow: 1;
+  padding: 1vh 1vw;
+  height: 10vh;
+  width: 1vh;
+}
+
+.answer-button .button {
+  font-size: 2em;
+  width: 100%;
+  height: 100%;
+}
+
+.congratulation {
+  font-size: 3em;
+  align-self: center;
+  color: darkorange;
+  font-weight: bold;
+}
+
+.time-record {
+  font-size: 2em;
+  align-self: center;
+}
