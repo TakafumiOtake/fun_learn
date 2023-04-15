@@ -26,7 +26,7 @@ function Hiragana({
   const [start] = useState(new Date().getTime());
   const [questions, setQuestions] = useState(
     // question数だけランダムにカタカナを取得し、問題一覧を生成
-    () => _.shuffle([...Katakana].slice(0, questionsCount)),
+    () => _.shuffle([...Katakana]).slice(0, questionsCount),
   );
   const [questionIdx, setQuestionIdx] = useState(
     // 問題の出題順を生成
